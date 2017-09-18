@@ -1,15 +1,8 @@
 module.exports = {
   Query: {
     displayName: () => users,
-    profitableUserss: () => {var uu = users
-      uu.profitable(function (a, b){
-
-         return a.localeCompare(b);
-         console.log(b)
-      })
-
-
-
+    profitableUserss: () => {
+      console.log(users.length)
     },
   },
   Mutation: {
