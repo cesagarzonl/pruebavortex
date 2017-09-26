@@ -7,9 +7,9 @@ module.exports = {
   },
   Mutation: {
     createUser: (_, data) => {
-      cut = data.name.charAt(0);
-      cut2 = data.lastname.charAt(0);
-      cut3 = cut+"."+cut2
+     var cut = data.name.charAt(0);
+     var cut2 = data.lastname.charAt(0);
+     var cut3 = cut+"."+cut2
       const newUser = Object.assign({id: users.length + 1},{initial:cut3}, data);
       users.push(newUser);
       return newUser;
